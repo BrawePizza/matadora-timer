@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>🍅 MATADORA MATAMATADORA</h1>
+  </header>
+
+  <main class="container">
+
+    <div id="notification" class="notification hidden">
+      <span id="notificationText"></span>
+    </div>
+
+    <section class="timers">
+      <div id="workBox" class="card active work">
+        <h2>🍅 Работа</h2>
+        <div id="workTimer">25:00</div>
+      </div>
+      <div id="breakBox" class="card break">
+        <h2>☕ Отдых</h2>
+        <div id="breakTimer">05:00</div>
+      </div>
+    </section>
+
+    <section class="controls">
+      <button id="startPause">▶ Старт</button>
+      <button id="reset">⏹ Сброс</button>
+      <button id="exportJSON">📥 JSON</button>
+    </section>
+
+    <section class="panel stats-panel">
+      <h3>📊 Статистика</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" id="pomodoroCount">0</span>
+          <span class="stat-label">Помидоров</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="totalTime">0 мин</span>
+          <span class="stat-label">Общее время</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel settings-panel">
+      <h3>⚙️ Настройки</h3>
+
+      <label>Работа (мин)
+        <input id="workInput" type="number" min="1" max="120" value="25">
+      </label>
+      <label>Короткий отдых (мин)
+        <input id="breakInput" type="number" min="1" max="30" value="5">
+      </label>
+      <label>Длинный перерыв (мин)
+        <input id="longBreakInput" type="number" min="1" max="60" value="15">
+      </label>
+      <label>Помидоров до длинного
+        <input id="longBreakAfterInput" type="number" min="2" max="10" value="4">
+      </label>
+
+      <button id="saveSettings">💾 Сохранить настройки</button>
+    </section>
+
+    <section class="panel history-panel">
+      <h3>📜 История</h3>
+      <ul id="history"></ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
