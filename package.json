@@ -10,7 +10,7 @@
     "start": "live-server public"
   },
   "devDependencies": {
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
   "name": "matadora",
   "version": "1.0.0",
   "description": "Timer ",
