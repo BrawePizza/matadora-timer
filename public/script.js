@@ -135,10 +135,10 @@ function updateDisplay() {
 
     if (timerState.mode === "break") {
         document.body.classList.add("break-mode")
-        document.title = "Отдых — Pomodoro Pro"
+        document.title = "Отдых — Pomodoro Pro Max Ultra"
     } else {
         document.body.classList.remove("break-mode")
-        document.title = "Работа — Pomodoro Pro"
+        document.title = "Работа — Pomodoro Pro Max Ultra"
     }
 
     if (startBtn) {
