@@ -256,7 +256,7 @@ function switchMode() {
         timerState.mode = "work"
 
         showNotification("⏰ Перерыв окончен! Время работать!")
-        document.title = "Pomodoro Pro"
+        document.title = "Pomodoro Pro Max Ultra"
     }
 
     saveState()
